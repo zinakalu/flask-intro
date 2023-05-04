@@ -12,6 +12,11 @@ def user(username):
     return f'<h3>Profile for {username} </h3>'
 
 
+@app.route('/square/<int:number>')
+def show_square(number):
+    return "Square of "+ str(number) + " is" + str(number*number)
+
+
 
 
 
